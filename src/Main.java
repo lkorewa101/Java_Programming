@@ -1,31 +1,28 @@
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] arg) {
-        Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        float op1 = s.nextInt();
-        String op = s.next();
-        float op2 = s.nextInt();
+        String course [] = {"Java", "C++", "HTML5", "ComputerStructure", "Android"};
+        int score [] = {95, 88, 76, 62, 55};
+        int count = 0;
+        while (true) {
+            String name = scan.nextLine();
+            if(name.equals("-1"))
+                break;
 
-        float result = 0;
-
-        if(op.equals("+")) {
-            result = op1 + op2;
-        } else if(op.equals("-")) {
-            result = op1 - op2;
-        } else if(op.equals("*")) {
-            result = op1 * op2;
-        } else if(op.equals("/")) {
-            if(op2 == 0) {
-                System.out.println("False");
-                s.close();
-                return;
-            } else {
-                result = op1 / op2;
+            for(int i = 0; i < course.length; i++) {
+                if(course[i].equals(name)) {
+                    System.out.println(course[i] + " : "+ score[i]);
+                    count++;
+                }
             }
+
+            if(count == 0)
+                System.out.println("N/A");
+
         }
 
-        System.out.println(op1 + " " + op + " " + op2 + " = " + result);
-        s.close();
-        }
+        scan.close();
     }
+}
