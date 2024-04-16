@@ -1,76 +1,70 @@
-import java.util.*;
-
-abstract class Shape{
-    public abstract void draw();
-}
-
-class Line extends Shape {
-    String name ="line";
-    public void draw() {
-        System.out.println("Line");
-    }
-}
-class Rect extends Shape {
-    String name ="Rect";
-    public void draw() {
-        System.out.println("Rect");
-    }
-}
-class Circle extends Shape {
-    String name ="circle";
-    public void draw() {
-        System.out.println("Circle");
-    }
-}
-class GraphicEditor {
-    Scanner sc = new Scanner(System.in);
-    Vector<Shape> v = new Vector<Shape>();
-    public void insert(int shape) {
-        Shape s;
-        switch(shape) {
-            case 1:
-                s = new Line(); v.add(s); break;
-            case 2:
-                s = new Rect(); v.add(s); break;
-            case 3:
-                s = new Circle(); v.add(s); break;
-            default:
-                System.out.println("잘못된 입력입니다."); return;
-        }
-    }
-    public void delete(int pos) {
-        v.remove(pos - 1);
-    }
-    public void print() {
-        for(int i = 0; i < v.size(); i++) {
-            Shape s = v.get(i);
-            s.draw();
-        }
-    }
-    public void run() {
+import java.util.Scanner;
+import java.util.Vector;
+public class Prac {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Vector<Shape> v = new Vector<Shape>();
+        Shape shape = null;
+        System.out.println("그래픽 에디터 beauty을 실행합니다.");
         while(true) {
-            System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4)>>");
-            int n = sc.nextInt();
-            switch(n) {
+            System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4) >> ");
+            int select = sc.nextInt();
+            switch(select) {
                 case 1:
-                    System.out.print("Line(1), Rect(2), circle(3)>>");
-                    int shape = sc.nextInt();
-                    insert(shape); break;
+                    System.out.print("Line(1), Rect(2), Circle(3) >> ");
+                    int choice = sc.nextInt();
+                    switch(choice) {
+                        case 1:
+                            shape = new Line();
+                            break;
+                        case 2:
+                            shape = new Rect();
+                            break;
+                        case 3:
+                            shape = new Circle();
+                            break;
+                    }
+                    v.add(shape);
+                    break;
                 case 2:
-                    System.out.print("삭제할 도형의 위치>>");
-                    int target = sc.nextInt();
-                    delete(target); break;
+                    System.out.print("삭제할 도형의 위치 >> " );
+                    int position = sc.nextInt();
+                    if(v.size() == 0 || v.size() <= position)
+                        System.out.println("삭제할 수 없습니다.");
+                    else
+                        v.remove(position);
+                    break;
                 case 3:
-                    print(); break;
+                    for(int i=0; i<v.size(); i++)
+                        v.get(i).draw();
+                    break;
                 case 4:
-                    System.out.println("프로그램종료");
+                    System.out.println("beauty을 종료합니다.");
                     sc.close();
                     return;
             }
         }
     }
-    public static void main(String[] args) {
-        GraphicEditor e = new GraphicEditor();
-        e.run();
+}
+abstract class Shape {
+    private Shape next;
+    public Shape() { next = null; }
+    public void setNext(Shape obj) { next = obj; } //링크 연결
+    public Shape getNext() { return next; }
+    public abstract void draw();
+}
+class Line extends Shape {
+    public void draw() {
+        System.out.println("Line");
+    }
+}
+class Rect extends Shape {
+    public void draw() {
+        System.out.println("Rect");
+    }
+}
+class Circle extends Shape {
+    public void draw() {
+        System.out.println("Circle");
     }
 }
