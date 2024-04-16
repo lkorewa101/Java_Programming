@@ -1,15 +1,19 @@
 
 œ
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(•Ö´Ù8…áò­î1J$5dd2025e-c600-4edf-8c5f-ea61cdc516ac
-r	java:S106
-"+Replace this use of System.out by a logger.(²²•Áûÿÿÿÿ8Àáò­î1J$b2fa9000-d766-4502-aa47-b780b374e4ad
-m	java:S106"+Replace this use of System.out by a logger.(ú­£8Àáò­î1J$54953093-9089-4a14-b1da-ac1198ff5a12
-r	java:S106"+Replace this use of System.out by a logger.(ÇÔ…úÿÿÿÿ8Àáò­î1J$6fead544-3abe-4700-9be1-27c7cf1ca9d7
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(•Ö´Ù8µÔ°î1J$2113e101-e1d7-438c-9382-509f0785726c
 ¨
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(•Ö´Ù8Èáò­î1J$c0e52683-e97d-455c-98fc-3edc28e37c28
-m	java:S106&"+Replace this use of System.out by a logger.(æÕÒÇ8Èáò­î1J$5391ca40-dfd4-468a-aa8e-7b975c2f2305
-m	java:S1064"+Replace this use of System.out by a logger.(Šæø¤8Ñáò­î1J$fb1cce33-e1bb-4e94-bc08-3ce94b271f19
-c	java:S1316""Add a default case to this switch.(Âúïi8Ñáò­î1J$e21c189b-bb22-49e5-8d48-5a80a9c0f6e8
-r	java:S1068"+Replace this use of System.out by a logger.(ÄÔƒáÿÿÿÿÿ8Ñáò­î1J$85a4d429-6a44-4e9b-bea3-d5073ffb3fae
-m	java:S106<"+Replace this use of System.out by a logger.(¸™½•8Ñáò­î1J$a40d4540-4e75-49db-9997-b9f06e9592b8
-m	java:S106B"+Replace this use of System.out by a logger.(“é²Ó8Ñáò­î1J$322e9047-f85c-4fbc-8588-5b3abeb15b83
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(•Ö´Ù8î’Ô°î1J$f4d3c157-0bfc-48a8-8c6a-4271a967acb3
+m	java:S106	"+Replace this use of System.out by a logger.(Šæø¤8ú’Ô°î1J$9f5b3234-2076-46ae-b263-af0e10694ff7
+c	java:S131""Add a default case to this switch.(ùé 8ü’Ô°î1J$4e664a3c-76bc-4849-9e5f-f092abcd6202
+m	java:S106"+Replace this use of System.out by a logger.(šœºÏ8ü’Ô°î1J$61751949-ea2f-4d49-9af0-a8eac3513f26
+d	java:S131""Add a default case to this switch.(¨ÕÉ8ı’Ô°î1J$5a202fee-199b-4d99-ac90-cecbdcefe226
+m	java:S106"+Replace this use of System.out by a logger.(¸™½•8ş’Ô°î1J$dfcb63ea-5e01-4eec-9374-53a6b3798f80
+
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Õù¬—8˜“Ô°î1J$a96a85ac-50a2-4740-89be-ec285c79ac9d
+m	java:S106 "+Replace this use of System.out by a logger.(ãÆ×ù8™“Ô°î1J$7b78edc3-731c-44d4-a3e2-34f773ec4116
+m	java:S106)"+Replace this use of System.out by a logger.(“é²Ó8“Ô°î1J$0eac0e69-b776-4de2-8509-c58f1b81397a
+|
+java:S59932"9Change the visibility of this constructor to "protected".(¯™³Î8«“Ô°î1J$04ce8284-4ae9-4cab-ba57-ec3ebdac9e63
+r	java:S1069"+Replace this use of System.out by a logger.(²²•Áûÿÿÿÿ8´“Ô°î1J$0b04fbf3-6b1d-4273-8354-ccc3c2dbcd8f
+m	java:S106>"+Replace this use of System.out by a logger.(ú­£8µ“Ô°î1J$647e1307-c55d-41a4-96ee-633752d72283
+r	java:S106C"+Replace this use of System.out by a logger.(ÇÔ…úÿÿÿÿ8¶“Ô°î1J$08c3b6c4-9c62-40e4-9495-a8c677a1f429

@@ -1,17 +1,16 @@
 import java.util.Scanner;
 import java.util.Vector;
-public class Prac {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Vector<Shape> v = new Vector<Shape>();
         Shape shape = null;
-        System.out.println("그래픽 에디터 beauty을 실행합니다.");
         while(true) {
-            System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4) >> ");
+            System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4)>>");
             int select = sc.nextInt();
             switch(select) {
                 case 1:
-                    System.out.print("Line(1), Rect(2), Circle(3) >> ");
+                    System.out.print("Line(1), Rect(2), Circle(3)>>");
                     int choice = sc.nextInt();
                     switch(choice) {
                         case 1:
@@ -27,7 +26,7 @@ public class Prac {
                     v.add(shape);
                     break;
                 case 2:
-                    System.out.print("삭제할 도형의 위치 >> " );
+                    System.out.print("삭제할 도형의 위치>>" );
                     int position = sc.nextInt();
                     if(v.size() == 0 || v.size() <= position)
                         System.out.println("삭제할 수 없습니다.");
@@ -39,7 +38,7 @@ public class Prac {
                         v.get(i).draw();
                     break;
                 case 4:
-                    System.out.println("beauty을 종료합니다.");
+                    System.out.println("프로그램종료");
                     sc.close();
                     return;
             }
