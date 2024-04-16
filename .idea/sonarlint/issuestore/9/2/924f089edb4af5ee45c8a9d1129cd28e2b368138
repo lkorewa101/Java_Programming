@@ -1,9 +1,15 @@
 
-]
-java:S1220""Move this file to a named package.8Ëüâ¬å1J$059b4391-d8c0-494c-b04b-bc27ddc9d1be
-r
-java:S1197"*Move the array designators [] to the type.(ÎÎ‹ÿÿÿÿÿ8æÛâ¬å1J$1d1840aa-e887-485d-9713-b5591db006db
-m
-java:S1197"*Move the array designators [] to the type.(ƒµ¾˜8æÛâ¬å1J$fec201d2-4f55-421f-a362-ff60a7db85f7
-r	java:S106"+Replace this use of System.out by a logger.(¿ˆèÑÿÿÿÿÿ8éÛâ¬å1J$844547ef-8e94-415e-b5dd-38abb8ff9a4d
-m	java:S106"+Replace this use of System.out by a logger.(Àşè³8éÛâ¬å1J$eb613880-1a5e-43a8-8398-3f6778eb117f
+œ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(•Ö´Ù8…áò­î1J$5dd2025e-c600-4edf-8c5f-ea61cdc516ac
+r	java:S106
+"+Replace this use of System.out by a logger.(²²•Áûÿÿÿÿ8Àáò­î1J$b2fa9000-d766-4502-aa47-b780b374e4ad
+m	java:S106"+Replace this use of System.out by a logger.(ú­£8Àáò­î1J$54953093-9089-4a14-b1da-ac1198ff5a12
+r	java:S106"+Replace this use of System.out by a logger.(ÇÔ…úÿÿÿÿ8Àáò­î1J$6fead544-3abe-4700-9be1-27c7cf1ca9d7
+¨
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(•Ö´Ù8Èáò­î1J$c0e52683-e97d-455c-98fc-3edc28e37c28
+m	java:S106&"+Replace this use of System.out by a logger.(æÕÒÇ8Èáò­î1J$5391ca40-dfd4-468a-aa8e-7b975c2f2305
+m	java:S1064"+Replace this use of System.out by a logger.(Šæø¤8Ñáò­î1J$fb1cce33-e1bb-4e94-bc08-3ce94b271f19
+c	java:S1316""Add a default case to this switch.(Âúïi8Ñáò­î1J$e21c189b-bb22-49e5-8d48-5a80a9c0f6e8
+r	java:S1068"+Replace this use of System.out by a logger.(ÄÔƒáÿÿÿÿÿ8Ñáò­î1J$85a4d429-6a44-4e9b-bea3-d5073ffb3fae
+m	java:S106<"+Replace this use of System.out by a logger.(¸™½•8Ñáò­î1J$a40d4540-4e75-49db-9997-b9f06e9592b8
+m	java:S106B"+Replace this use of System.out by a logger.(“é²Ó8Ñáò­î1J$322e9047-f85c-4fbc-8588-5b3abeb15b83

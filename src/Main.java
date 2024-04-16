@@ -1,28 +1,76 @@
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+import java.util.*;
 
-        String course [] = {"Java", "C++", "HTML5", "ComputerStructure", "Android"};
-        int score [] = {95, 88, 76, 62, 55};
-        int count = 0;
-        while (true) {
-            String name = scan.nextLine();
-            if(name.equals("-1"))
-                break;
+abstract class Shape{
+    public abstract void draw();
+}
 
-            for(int i = 0; i < course.length; i++) {
-                if(course[i].equals(name)) {
-                    System.out.println(course[i] + " : "+ score[i]);
-                    count++;
-                }
-            }
-
-            if(count == 0)
-                System.out.println("N/A");
-
+class Line extends Shape {
+    String name ="line";
+    public void draw() {
+        System.out.println("Line");
+    }
+}
+class Rect extends Shape {
+    String name ="Rect";
+    public void draw() {
+        System.out.println("Rect");
+    }
+}
+class Circle extends Shape {
+    String name ="circle";
+    public void draw() {
+        System.out.println("Circle");
+    }
+}
+class GraphicEditor {
+    Scanner sc = new Scanner(System.in);
+    Vector<Shape> v = new Vector<Shape>();
+    public void insert(int shape) {
+        Shape s;
+        switch(shape) {
+            case 1:
+                s = new Line(); v.add(s); break;
+            case 2:
+                s = new Rect(); v.add(s); break;
+            case 3:
+                s = new Circle(); v.add(s); break;
+            default:
+                System.out.println("잘못된 입력입니다."); return;
         }
-
-        scan.close();
+    }
+    public void delete(int pos) {
+        v.remove(pos - 1);
+    }
+    public void print() {
+        for(int i = 0; i < v.size(); i++) {
+            Shape s = v.get(i);
+            s.draw();
+        }
+    }
+    public void run() {
+        while(true) {
+            System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4)>>");
+            int n = sc.nextInt();
+            switch(n) {
+                case 1:
+                    System.out.print("Line(1), Rect(2), circle(3)>>");
+                    int shape = sc.nextInt();
+                    insert(shape); break;
+                case 2:
+                    System.out.print("삭제할 도형의 위치>>");
+                    int target = sc.nextInt();
+                    delete(target); break;
+                case 3:
+                    print(); break;
+                case 4:
+                    System.out.println("프로그램종료");
+                    sc.close();
+                    return;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        GraphicEditor e = new GraphicEditor();
+        e.run();
     }
 }
