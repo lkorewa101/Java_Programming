@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class FileReadHangulSuccess {
     public static void main(String[] args) {
         InputStreamReader in = null;
         FileInputStream fin = null;
