@@ -14,7 +14,7 @@ public class ContentPaneEx extends JFrame {
 
         contentPane.add(new JButton("OK"));
         contentPane.add(new JButton("Cancel"));
-        contentPane.add(new JLabel("Ignore"));
+        contentPane.add(new JButton("Ignore"));
 
         setSize(300, 150);
         setVisible(true);

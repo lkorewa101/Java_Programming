@@ -10,7 +10,7 @@ public class ClickAndDoubleClickEx extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Container c = getContentPane();
-        c.addMouseMotionListener(new MyMouseListener());
+        c.addMouseListener(new MyMouseListener());
         setSize(300, 200);
         setVisible(true);
     }
@@ -22,7 +22,7 @@ public class ClickAndDoubleClickEx extends JFrame {
                 int g = (int)(Math.random()*256);
                 int b = (int)(Math.random()*256);
 
-                Component c  =(Component)e.getSource();
+                Component c  = (Component)e.getSource();
                 c.setBackground(new Color(r,g,b));
             }
         }
